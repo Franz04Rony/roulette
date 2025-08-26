@@ -4,8 +4,8 @@ const button = document.getElementById("button")
 const winnerLabel = document.getElementById("winner")
 const canvas = document.getElementById("canvas")
 const ctx = canvas.getContext('2d');
-canvas.height = 500
-canvas.width = 500
+canvas.height = window.innerHeight * 0.8;
+canvas.width = Math.min(window.innerWidth * 0.9, 500);
 let myRec
 
 const PI = Math.PI
